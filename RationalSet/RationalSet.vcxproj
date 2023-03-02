@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a4c87207-c51e-40ae-9cdd-90b65b85b8a7}</ProjectGuid>
-    <RootNamespace>RationalSetDriver</RootNamespace>
+    <ProjectGuid>{cf18a45e-c057-4c1c-8403-e0edf7c6866c}</ProjectGuid>
+    <RootNamespace>RationalSet</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
