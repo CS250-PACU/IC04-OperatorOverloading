@@ -8,8 +8,8 @@ The solution includes three working projects:
 Your mission is to get practice with overloading operators in both Rational and
 RationalSet.
 
-*** I want to rewrite this so that the students do one function at a time. I'm 
-worried that jumping into all the functions at once is too much for them ***
+***I want to rewrite this so that the students do one function at a time. I'm 
+worried that jumping into all the functions at once is too much for them***
 
 # class Rational
 1.	overload << to output a Rational object in the form 1/2.
