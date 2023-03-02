@@ -16,7 +16,7 @@ Do not modify either Rational object being multiplied.
 4.	overload == to test whether two Rational objects are equal. In this case 1/2 
 is not equal to 2/4 ***(Doug added this in 2022)***
 
-# RationalSet Driver
+# Rational Driver
 Implement each function and uncomment the driver code.
 
 # class RationalSet
