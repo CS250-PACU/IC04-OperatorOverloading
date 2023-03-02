@@ -17,7 +17,7 @@ Do not modify either Rational object being multiplied.
 is not equal to 2/4 ***(Doug added this in 2022)***
 
 # RationalSet Driver
-1.	Implement each function and uncomment the driver code.
+Implement each function and uncomment the driver code.
 
 # class RationalSet
 1.	overload << to output a RationalSet object in the form {1/2 2/3 3/4}.
@@ -33,4 +33,4 @@ This makes the input easier.
 modify either RationalSet object.  ***(Doug removed this in 2022)***
 
 # RationalSet Driver
-1.	Implement each function and uncomment the driver code.
+Implement each function and uncomment the driver code.
