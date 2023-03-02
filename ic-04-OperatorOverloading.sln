@@ -5,14 +5,14 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rational", "Rational\Rational.vcxproj", "{CE095BB1-C077-448F-B437-AFBD5DE544F5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RationalUnitTests", "RationalUnitTests\RationalUnitTests.vcxproj", "{9B764639-D661-4212-BB65-D0696CFB14C1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RationalSet", "RationalSet\RationalSet.vcxproj", "{CF18A45E-C057-4C1C-8403-E0EDF7C6866C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{CE095BB1-C077-448F-B437-AFBD5DE544F5} = {CE095BB1-C077-448F-B437-AFBD5DE544F5}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RationalSet", "RationalSet\RationalSet.vcxproj", "{CF18A45E-C057-4C1C-8403-E0EDF7C6866C}"
-	ProjectSection(ProjectDependencies) = postProject
-		{CE095BB1-C077-448F-B437-AFBD5DE544F5} = {CE095BB1-C077-448F-B437-AFBD5DE544F5}
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1E21A0F4-33ED-4E25-B72C-43352053781D}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
@@ -31,14 +31,6 @@ Global
 		{CE095BB1-C077-448F-B437-AFBD5DE544F5}.Release|x64.Build.0 = Release|x64
 		{CE095BB1-C077-448F-B437-AFBD5DE544F5}.Release|x86.ActiveCfg = Release|Win32
 		{CE095BB1-C077-448F-B437-AFBD5DE544F5}.Release|x86.Build.0 = Release|Win32
-		{9B764639-D661-4212-BB65-D0696CFB14C1}.Debug|x64.ActiveCfg = Debug|x64
-		{9B764639-D661-4212-BB65-D0696CFB14C1}.Debug|x64.Build.0 = Debug|x64
-		{9B764639-D661-4212-BB65-D0696CFB14C1}.Debug|x86.ActiveCfg = Debug|Win32
-		{9B764639-D661-4212-BB65-D0696CFB14C1}.Debug|x86.Build.0 = Debug|Win32
-		{9B764639-D661-4212-BB65-D0696CFB14C1}.Release|x64.ActiveCfg = Release|x64
-		{9B764639-D661-4212-BB65-D0696CFB14C1}.Release|x64.Build.0 = Release|x64
-		{9B764639-D661-4212-BB65-D0696CFB14C1}.Release|x86.ActiveCfg = Release|Win32
-		{9B764639-D661-4212-BB65-D0696CFB14C1}.Release|x86.Build.0 = Release|Win32
 		{CF18A45E-C057-4C1C-8403-E0EDF7C6866C}.Debug|x64.ActiveCfg = Debug|x64
 		{CF18A45E-C057-4C1C-8403-E0EDF7C6866C}.Debug|x64.Build.0 = Debug|x64
 		{CF18A45E-C057-4C1C-8403-E0EDF7C6866C}.Debug|x86.ActiveCfg = Debug|Win32

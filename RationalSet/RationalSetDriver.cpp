@@ -10,35 +10,33 @@
 #include "RationalSet.h"
 #include "Rational.h"
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
 int main() {
-  RationalSet cRatSetOne, cRatSetTwo, cRatSetIntersection;
-  Rational cRationalOne(1, 100), cRationalTwo(2, 400),
-    cRationalThree(3, 900), cRationalFour;
+  RationalSet cRationalSet, cR2, cR3;
+  Rational cRational;
+  ifstream inputRational;
+  ifstream inputRationalSet;
 
-  cRatSetOne.add(cRationalOne);
-  cRatSetOne.add(cRationalTwo);
-  cRatSetOne.add(cRationalThree);
+  //inputRational.open ("RationalNumbers.txt");
 
-  cRationalFour = cRationalOne.multiply(cRationalTwo);
 
-  cRatSetTwo.add(cRationalFour);
-  cRatSetTwo.add(cRationalOne);
+  //while (inputRational >> cRational) {
+  //  cout << cRational << endl;
+  //  // cRationalSet1 = cRationalSet1 + cRational;
+  //}
 
-  cout << "\nSET ONE: \n";
-  cRatSetOne.print(cout);
+  //inputRational.close ();
 
-  cout << "\nSET TWO: \n";
-  cRatSetTwo.print(cout);
+  //inputRationalSet.open ("RationalSets.txt");
 
-  cRatSetIntersection = cRatSetOne.intersection(cRatSetTwo);
+  //while (inputRationalSet >> cRationalSet) {
+  //  cout << cRationalSet << endl;
+  //}
 
-  cout << "\nINTERSECTION OF SETS ONE AND TWO:\n";
-  cRatSetIntersection.print(cout);
+  //inputRationalSet.close ();
 
-  cout << "\nprogram ended successfully\n";
-
-  return 0;
+  return EXIT_SUCCESS;
 }

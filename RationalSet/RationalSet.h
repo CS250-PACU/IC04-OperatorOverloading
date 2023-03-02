@@ -11,19 +11,19 @@
 
 #include "Rational.h"
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 class RationalSet {
 public:
-	static const int MAX_RATIONALS = 100;
+	RationalSet();
+	RationalSet(const RationalSet& rcRationalSet);
 
-	void print(ostream& rcOutStream) const;
 	bool isIn(const Rational& rcRational) const;
-	RationalSet intersection(const RationalSet& rcOtherSet) const;
-	bool add(const Rational& rcRational);
+	int size() const;
+	//bool add(const Rational& rcRational);
 
 private:
-	Rational macRational[MAX_RATIONALS];
-	int mNumRationals = 0;
+	vector<Rational> mcRationals;
 };

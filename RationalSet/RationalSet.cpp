@@ -11,6 +11,33 @@
 #include "RationalSet.h"
 
 //*********************************************************************
+// Function:    Default Constructor
+//
+// Description: Need a default constructor in order to have a copy 
+//              constructor
+//
+// Parameters:  none
+//
+// Returned:    no return value
+//*********************************************************************
+RationalSet::RationalSet() {
+
+}
+
+//*********************************************************************
+// Function:    Copy Constructor
+//
+// Description: Copies the passed-in object to this object
+//
+// Parameters:  rcRationalSet - the RationalSet object to copy from
+//
+// Returned:    true if found, false otherwise
+//*********************************************************************
+RationalSet::RationalSet(const RationalSet& rcRationalSet) {
+	mcRationals = rcRationalSet.mcRationals;
+}
+
+//*********************************************************************
 // Function:    isIn
 //
 // Description: Determine if a Rational exists in the Set
@@ -19,36 +46,24 @@
 //
 // Returned:    true if found, false otherwise
 //*********************************************************************
-
 bool RationalSet::isIn(const Rational& rcRational) const {
 	bool bIsIn = false;
-
-	for (int i = 0; i < mNumRationals && !bIsIn; i++) {
-		if (macRational[i].equals(rcRational)) {
-			bIsIn = true;
-		}
-	}
 
 	return bIsIn;
 }
 
 //*********************************************************************
-// Function:    print
+// Function:    size
 //
-// Description: print the set to the given ostream
+// Description: Determines the number of items in the RationalSet
 //
-// Parameters:  rcOutput - the stream to write to
+// Parameters:  none
 //
-// Returned:    None
+// Returned:    the number of items in the set
 //*********************************************************************
-
-void RationalSet::print(ostream& rcOutput)  const {
-	for (int i = 0; i < mNumRationals; ++i) {
-		macRational[i].write(rcOutput);
-		cout << endl;
-	}
+ int RationalSet::size() const {
+	return static_cast<int>(mcRationals.size());
 }
-
 
 //*********************************************************************
 // Function:    add
@@ -60,37 +75,10 @@ void RationalSet::print(ostream& rcOutput)  const {
 //
 // Returned:    true if added, false otherwise
 //*********************************************************************
-
-bool RationalSet::add(const Rational& rcRational) {
-	bool bAdded = false;
-
-	if (mNumRationals < MAX_RATIONALS && !isIn(rcRational)) {
-		macRational[mNumRationals++] = rcRational;
-		bAdded = true;
-	}
-	return bAdded;
-}
-
-//*********************************************************************
-// Function:    intersection
+//bool RationalSet::add(const Rational& rcRational) {
+//	bool bAdded = false;
 //
-// Description: Build a new RationalSet that is the intersection of 
-//              this object and rcOtherSet
 //
-// Parameters:  rcOtherSet - the set to intersect against
-//
-// Returned:    The RationalSet containing the intersection
-//*********************************************************************
+//	return bAdded;
+//}
 
-RationalSet RationalSet::intersection(const RationalSet& rcOtherSet)
-const {
-	RationalSet cIntersect;
-
-	for (int i = 0; i < mNumRationals; ++i) {
-		if (rcOtherSet.isIn(macRational[i])) {
-			cIntersect.add(macRational[i]);
-		}
-	}
-
-	return cIntersect;
-}

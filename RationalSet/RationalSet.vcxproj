@@ -138,6 +138,10 @@
     <ClCompile Include="RationalSet.cpp" />
     <ClCompile Include="RationalSetDriver.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="RationalNumbers.txt" />
+    <Text Include="RationalSets.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

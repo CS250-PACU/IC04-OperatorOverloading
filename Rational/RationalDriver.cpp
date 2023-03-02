@@ -15,14 +15,21 @@ using namespace std;
 int main() {
 	Rational cRational1(2, 3), cRational2(4, 5);
 
-	cRational1.write(cout);
-	cout << endl;
+	//cout << cR1 << ' ' << cR2 << ' ' << cR3 << endl;
 
-	cRational2.write(cout);
-	cout << endl;
+	//cout << "Enter a Rational number: ";
+	//cin >> cR3;
+	//cout << "Rational Entered: " << cR3 << endl;
 
-	cRational1.multiply(cRational2).write(cout);
-	cout << endl;
+	//cR3 = cR1 * cR2;
+	//cout << cR3 << endl;
+
+	//if (cR1 * cR2 == cR3) {
+	//  cout << "cR1 * cR2 equals cR3" << endl;
+	//}
+	//else {
+	//  cout << "cR1 * cR2 not equals cR3" << endl;
+	//}
 
 	return EXIT_SUCCESS;
 }
