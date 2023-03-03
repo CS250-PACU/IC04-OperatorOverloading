@@ -5,22 +5,26 @@ The solution includes three working projects:
 - RationalUnitTests
 
 # Mission
-Your mission is to get practice with overloading operators in both Rational and
-RationalSet.
+Your mission is to get practice with overloading operators in both 
+Rational and RationalSet.
 
-***I want to rewrite this so that the students do one function at a time. I'm 
-worried that jumping into all the functions at once is too much for them***
+***I want to rewrite this so that the students do one function at a 
+time. I'm worried that jumping into all the functions at once is too 
+much for them***
 
-# class Rational
-1.	overload << to output a Rational object in the form 1/2.
-2.	overload >> to input a Rational object in the form 1/2.
-3.	overload * to multiply two Rational objects returning a Rational object. 
-Do not modify either Rational object being multiplied.
-4.	overload == to test whether two Rational objects are equal. In this case 1/2 
-is not equal to 2/4 ***(Doug added this in 2022)***
-
-# Rational Driver
-Implement each function and uncomment the driver code.
+# class Rational and Rational Driver
+1.	In Rational.h and Rational.cpp overload << to output a Rational 
+object in the form 1/2. Do not output a newline after outputting the 
+denominator.
+2.  Test << by uncommenting line 18 in the Rational driver.
+3.	overload >> to input a Rational object in the form 1/2.
+4.  Test << by uncommenting lines 20-22 in the Rational driver.
+5.	overload * to multiply two Rational objects returning a Rational.
+6.  Test * by uncommenting lines 24-26 in the Rational driver.
+object. Do not modify either Rational object being multiplied.
+7.	overload == to test whether two Rational objects are equal. In 
+this case 1/2 is not equal to 2/4 ***(Doug added this in 2022)***
+8.  Test == by uncommenting lines 28 - 40
 
 # class RationalSet
 1.	overload << to output a RationalSet object in the form {1/2 2/3 3/4}.
