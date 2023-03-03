@@ -26,10 +26,15 @@ object. Do not modify either Rational object being multiplied.
 this case 1/2 is not equal to 2/4 ***(Doug added this in 2022)***
 8.  Test == by uncommenting lines 28 - 40
 
-# class RationalSet
-1.	overload << to output a RationalSet object in the form {1/2 2/3 3/4}.
-2.	overload + to add a Rational object to a RationalSet. Do not allow 
+# class RationalSet and RationalSet Driver
+1.	In RationalSet.h and RationalSet.cpp overload << to output a 
+RationalSet object in the form { 1/2 2/3 3/4 }
+2. Test << by uncommenting lines 51 - 57 and lines 25 - 26
+3.	overload + to add a Rational object to a RationalSet. Do not allow 
 duplicates. ***(Doug added this in 2022)***
+4.  Test + by uncommenting lines 28 - 29
+
+
 3.	overload == to test whether two RationalSet objects are equal.  ***(Doug 
 added this in 2022)*** 
 4.	overload >> to input a RationalSet object in the form {1/2 2/3 3/4}. 
@@ -38,6 +43,3 @@ one shown can have no trailing space after { or a preceding space in front of }.
 This makes the input easier.
 5. overload * to return the intersection of two RationalSet objects. Do not 
 modify either RationalSet object.  ***(Doug removed this in 2022)***
-
-# RationalSet Driver
-Implement each function and uncomment the driver code.

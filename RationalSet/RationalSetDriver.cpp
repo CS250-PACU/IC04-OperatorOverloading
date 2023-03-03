@@ -14,14 +14,21 @@
 
 using namespace std;
 
-int main() {
-  RationalSet cRationalSet, cR2, cR3;
-  Rational cRational;
+void createTestSet (RationalSet& cSet1);
+
+int main () {
+  RationalSet cRationalSet, cRatSet;
+  Rational cRational, cR1 (5, 6);
   ifstream inputRational;
   ifstream inputRationalSet;
 
-  //inputRational.open ("RationalNumbers.txt");
+  //createTestSet (cRatSet);
+  //cout << cRatSet << endl;
 
+  //cRatSet = cRatSet + cR1;
+  //cout << "Added another rational to the set: " << cRatSet << endl;
+
+  //inputRational.open ("RationalNumbers.txt");
 
   //while (inputRational >> cRational) {
   //  cout << cRational << endl;
@@ -40,3 +47,11 @@ int main() {
 
   return EXIT_SUCCESS;
 }
+
+//void createTestSet (RationalSet& cSet1) {
+//  Rational cR1 (3, 4), cR2 (8, 3), cR3 (90 / 4);
+//
+//  cSet1.add (cR1);
+//  cSet1.add (cR2);
+//  cSet1.add (cR3);
+//}
