@@ -1,11 +1,10 @@
 //*********************************************************************
 // File name:  RationalSet.cpp
 // Author:     CS, Pacific University
-// Date:       2/13/23
+// Date:       3/4/23
 // Class:      CS250
 // Assignment: RationalSet 
-// Purpose:    Implementation for class RationalSet. Set of Rational 
-//						 numbers is of the form {}, {1/2}, {1/2 2/3}, ...
+// Purpose:    Implementation for class RationalSet. 
 //********************************************************************
 
 #include "RationalSet.h"
@@ -20,8 +19,8 @@
 //
 // Returned:    no return value
 //*********************************************************************
-RationalSet::RationalSet() {
 
+RationalSet::RationalSet () {
 }
 
 //*********************************************************************
@@ -33,23 +32,45 @@ RationalSet::RationalSet() {
 //
 // Returned:    true if found, false otherwise
 //*********************************************************************
-RationalSet::RationalSet(const RationalSet& rcRationalSet) {
+
+RationalSet::RationalSet (const RationalSet& rcRationalSet) {
 	mcRationals = rcRationalSet.mcRationals;
 }
 
 //*********************************************************************
 // Function:    isIn
 //
-// Description: Determine if a Rational exists in the Set
+// Description: Determine if a Rational exists in the set
 //
 // Parameters:  rcRational - the Rational to check for
 //
 // Returned:    true if found, false otherwise
 //*********************************************************************
-bool RationalSet::isIn(const Rational& rcRational) const {
+
+bool RationalSet::isIn (const Rational& rcRational) const {
 	bool bIsIn = false;
 
+	for (Rational cRat : mcRationals) {
+		if (cRat == rcRational) {
+			bIsIn = true;
+		}
+	}
+
 	return bIsIn;
+}
+
+//*********************************************************************
+// Function:    size
+//
+// Description: Determines the number of items in the RationalSet
+//
+// Parameters:  none
+//
+// Returned:    the number of items in the set
+//*********************************************************************
+
+int RationalSet::size () const {
+	return static_cast<int>(mcRationals.size ());
 }
 
 //*********************************************************************
@@ -62,7 +83,8 @@ bool RationalSet::isIn(const Rational& rcRational) const {
 //
 // Returned:    true if added, false otherwise
 //*********************************************************************
-bool RationalSet::add(const Rational& rcRational) {
+
+bool RationalSet::add (const Rational& rcRational) {
 	bool bAdded = false;
 
 	if (!isIn (rcRational)) {
@@ -71,4 +93,75 @@ bool RationalSet::add(const Rational& rcRational) {
 	}
 
 	return bAdded;
+}
+
+//*********************************************************************
+// Function:    operator <<
+//
+// Description: Output the set to a stream, where each Rational is
+//              separated by a space.
+//
+// Parameters:  rcStream - the output stream
+//						  rcRatSet - the RationalSet to send to the output stream
+//
+// Returned:    The modified output stream
+//*********************************************************************
+
+ostream& operator << (ostream& rcStream, const RationalSet& rcRatSet) {
+
+	return rcStream;
+}
+
+//*********************************************************************
+// Function:    operator >>
+//
+// Description: Read in the set from a stream, where each Rational is
+//              separated by a space.
+//
+// Parameters:  rcStream - the input stream
+//						  rcRatSet - the RationalSet to read into
+//
+// Returned:    the modified input stream
+//*********************************************************************
+
+istream& operator >> (istream& rcStream, RationalSet& rcRatSet) {
+
+	return rcStream;
+}
+
+//*********************************************************************
+// Function:    operator +
+//
+// Description: Adds a Rational to the set and returns it as a new set.
+//						  The calling RationalSet is not modified.
+//
+// Parameters:  rcRational - the Rational to add to the set
+//
+// Returned:    The set that is the calling RationalSet 
+//							plus the rcRational
+//*********************************************************************
+
+RationalSet RationalSet::operator + (const Rational& rcRational) {
+	RationalSet cNewSet;
+
+	return cNewSet;
+}
+
+//*********************************************************************
+// Function:    operator ==
+//
+// Description: Compares the calling RationalSet to the passed in 
+//					    RationalSet
+//
+// Parameters:  rcRationalSet - the RationalSet to compare
+//
+// Returned:    true if the sets are equal, otherwise false
+//*********************************************************************
+
+bool RationalSet::operator == (const RationalSet& rcRationalSet) const {
+	bool bIsEqual = true;
+
+
+
+	return bIsEqual;
 }

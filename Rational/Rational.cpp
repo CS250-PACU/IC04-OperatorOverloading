@@ -100,7 +100,6 @@ bool Rational::operator == (const Rational& rcRat) const {
 //*********************************************************************
 
 ostream& operator << (ostream& rcStream, const Rational& rcRat) {
-	
 	return rcStream;
 }
 
@@ -118,6 +117,5 @@ ostream& operator << (ostream& rcStream, const Rational& rcRat) {
 //*********************************************************************
 
 istream& operator >> (istream& rcStream, Rational& rcRat) {
-	
 	return rcStream;
 }

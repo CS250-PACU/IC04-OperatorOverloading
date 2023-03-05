@@ -2,11 +2,10 @@
 //*********************************************************************
 // File name:  RationalSet.h
 // Author:     CS, Pacific University
-// Date:       2/13/23
+// Date:       3/4/23
 // Class:      CS250
 // Assignment: RationalSet 
-// Purpose:    Definition for class RationalSet. A set of Rational
-//             numbers is of the form {}, {1/2}, {1/2 2/3}, ...
+// Purpose:    Definition for class RationalSet. 
 //*********************************************************************
 
 #include "Rational.h"
@@ -16,13 +15,22 @@
 using namespace std;
 
 class RationalSet {
-public:
-	RationalSet();
-	RationalSet(const RationalSet& rcRationalSet);
+	public:
+	RationalSet ();
+	RationalSet (const RationalSet& rcRationalSet);
 
-	bool isIn(const Rational& rcRational) const;
-	bool add(const Rational& rcRational);
+	bool isIn (const Rational& rcRational) const;
+	int size () const;
+	bool add (const Rational& rcRational);
 
-private:
+	RationalSet operator + (const Rational& rcRational);
+	bool operator == (const RationalSet& rcRationalSet) const;
+
+	friend ostream& operator << (ostream& rcStream,
+		const RationalSet& rcRatSet);
+	friend istream& operator >> (istream& rcStream,
+		RationalSet& rcRatSet);
+
+	private:
 	vector<Rational> mcRationals;
 };
