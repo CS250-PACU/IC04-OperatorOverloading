@@ -1,30 +1,36 @@
 # IC04-OperatorOverloading
-The solution includes three working projects:
+The solution includes the following projects that build:
 - Rational
 - RationalSet
 - RationalUnitTests
 
 # Mission
-Your mission is to get practice with overloading operators in both 
-Rational and RationalSet.
+Your mission is to get complete all of the functions that 
+fail the unit tests.
 
-***I want to rewrite this so that the students do one function at a 
-time. I'm worried that jumping into all the functions at once is too 
-much for them***
+**Please complete one step at a time**
 
-# class Rational and Rational Driver
-1a.	In Rational.h and Rational.cpp overload << to output a Rational 
-object in the form 1/2. Do not output a newline after outputting the 
-denominator.
-1b.  Test << by uncommenting line 18 in the Rational driver.
-2a.	overload >> to input a Rational object in the form 1/2.
-2b.  Test << by uncommenting lines 20-22 in the Rational driver.
-3a.	overload * to multiply two Rational objects returning a Rational.
-3b.  Test * by uncommenting lines 24-26 in the Rational driver.
-object. Do not modify either Rational object being multiplied.
-4a.	overload == to test whether two Rational objects are equal. In 
-this case 1/2 is not equal to 2/4 
-4b.  Test == by uncommenting lines 28 - 40
+# RationalUnitTests
+Build and run the project RationalUnitTests. The project should build
+and run, but most of the tests will fail. Your goal is to complete the
+missing code from the functions in Rational.cpp so that all the unit
+tests pass. You can complete the functions in any order you like, or 
+use the recommended order below.
+
+# class Rational
+1. Complete the code for operator *. Run the unit tests to make sure
+they pass.
+2. Complete the code for operator ==. Run the unit tests to make sure
+they pass.
+3. Complete the code for operator <<. Run the unit tests to make sure
+they pass.
+3. Complete the code for operator >>. Run the unit tests to make sure
+they pass.
+
+# Rational Driver
+Uncomment the code in Rational driver. If all the unit tests pass, then
+the code will run correctly. Verify this before moving to the next 
+step.
 
 # class RationalSet and RationalSet Driver
 1a.	In RationalSet.h and RationalSet.cpp overload << to output a 

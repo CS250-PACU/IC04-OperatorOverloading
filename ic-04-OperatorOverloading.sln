@@ -15,6 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RationalUnitTests", "RationalUnitTests\RationalUnitTests.vcxproj", "{F2183B8C-C6C4-436E-9236-387FDD87AF66}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CE095BB1-C077-448F-B437-AFBD5DE544F5} = {CE095BB1-C077-448F-B437-AFBD5DE544F5}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -39,6 +44,14 @@ Global
 		{CF18A45E-C057-4C1C-8403-E0EDF7C6866C}.Release|x64.Build.0 = Release|x64
 		{CF18A45E-C057-4C1C-8403-E0EDF7C6866C}.Release|x86.ActiveCfg = Release|Win32
 		{CF18A45E-C057-4C1C-8403-E0EDF7C6866C}.Release|x86.Build.0 = Release|Win32
+		{F2183B8C-C6C4-436E-9236-387FDD87AF66}.Debug|x64.ActiveCfg = Debug|x64
+		{F2183B8C-C6C4-436E-9236-387FDD87AF66}.Debug|x64.Build.0 = Debug|x64
+		{F2183B8C-C6C4-436E-9236-387FDD87AF66}.Debug|x86.ActiveCfg = Debug|Win32
+		{F2183B8C-C6C4-436E-9236-387FDD87AF66}.Debug|x86.Build.0 = Debug|Win32
+		{F2183B8C-C6C4-436E-9236-387FDD87AF66}.Release|x64.ActiveCfg = Release|x64
+		{F2183B8C-C6C4-436E-9236-387FDD87AF66}.Release|x64.Build.0 = Release|x64
+		{F2183B8C-C6C4-436E-9236-387FDD87AF66}.Release|x86.ActiveCfg = Release|Win32
+		{F2183B8C-C6C4-436E-9236-387FDD87AF66}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
