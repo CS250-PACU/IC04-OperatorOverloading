@@ -31,8 +31,5 @@
     <Text Include="RationalNumbers.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="RationalSets.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
   </ItemGroup>
 </Project>

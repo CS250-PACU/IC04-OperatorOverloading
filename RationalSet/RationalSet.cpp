@@ -53,19 +53,6 @@ bool RationalSet::isIn(const Rational& rcRational) const {
 }
 
 //*********************************************************************
-// Function:    size
-//
-// Description: Determines the number of items in the RationalSet
-//
-// Parameters:  none
-//
-// Returned:    the number of items in the set
-//*********************************************************************
- int RationalSet::size() const {
-	return static_cast<int>(mcRationals.size());
-}
-
-//*********************************************************************
 // Function:    add
 //
 // Description: Add the given Rational to the Set. Don't allow 
@@ -75,10 +62,13 @@ bool RationalSet::isIn(const Rational& rcRational) const {
 //
 // Returned:    true if added, false otherwise
 //*********************************************************************
-//bool RationalSet::add(const Rational& rcRational) {
-//	bool bAdded = false;
-//
-//
-//	return bAdded;
-//}
+bool RationalSet::add(const Rational& rcRational) {
+	bool bAdded = false;
 
+	if (!isIn (rcRational)) {
+		mcRationals.push_back (rcRational);
+		bAdded = true;
+	}
+
+	return bAdded;
+}

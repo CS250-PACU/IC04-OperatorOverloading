@@ -15,35 +15,31 @@
 using namespace std;
 
 void createTestSet (RationalSet& cSet1);
+void compareTwoSets (const RationalSet& cSet1,
+  const RationalSet& cSet2);
+void readSetFromFile (RationalSet& cSet);
 
 int main () {
-  RationalSet cRationalSet, cRatSet;
-  Rational cRational, cR1 (5, 6);
-  ifstream inputRational;
-  ifstream inputRationalSet;
+  RationalSet cFileSet, cRatSet, cRatSet2, cRationalSet1;
+  Rational cR1 (5, 6);
 
+  //cout << "\nCreating first test set:\n";
   //createTestSet (cRatSet);
   //cout << cRatSet << endl;
 
+  //cout << endl << cRatSet << " + " << cR1 << " = ";
   //cRatSet = cRatSet + cR1;
-  //cout << "Added another rational to the set: " << cRatSet << endl;
+  //cout << cRatSet << endl;
 
-  //inputRational.open ("RationalNumbers.txt");
+  //cout << "\nCreating second test set:\n";
+  //createTestSet (cRatSet2);
+  //cout << cRatSet2 << endl;
 
-  //while (inputRational >> cRational) {
-  //  cout << cRational << endl;
-  //  // cRationalSet1 = cRationalSet1 + cRational;
-  //}
+  //compareTwoSets (cRatSet, cRatSet2);
 
-  //inputRational.close ();
+  //compareTwoSets (cRatSet2, cRatSet2);
 
-  //inputRationalSet.open ("RationalSets.txt");
-
-  //while (inputRationalSet >> cRationalSet) {
-  //  cout << cRationalSet << endl;
-  //}
-
-  //inputRationalSet.close ();
+  //readSetFromFile (cFileSet);
 
   return EXIT_SUCCESS;
 }
@@ -54,4 +50,28 @@ int main () {
 //  cSet1.add (cR1);
 //  cSet1.add (cR2);
 //  cSet1.add (cR3);
+//}
+//
+//void compareTwoSets (const RationalSet& cSet1,
+//  const RationalSet& cSet2) {
+//  cout << "\nDoes " << cSet1 << " equal " << cSet2 << "?\n";
+//  if (cSet1 == cSet2) {
+//    cout << "YES! They are equal.\n";
+//  }
+//  else {
+//    cout << "NO! They are not equal.\n";
+//  }
+//}
+//
+//void readSetFromFile (RationalSet& cSet) {
+//  ifstream inputRational;
+//
+//  inputRational.open ("RationalNumbers.txt");
+//
+//  cout << "\nCreating a set from a file of rationals\n";
+//  inputRational >> cSet;
+//
+//  inputRational.close ();
+//
+//  cout << cSet << endl;
 //}

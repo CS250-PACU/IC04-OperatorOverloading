@@ -21,8 +21,7 @@ public:
 	RationalSet(const RationalSet& rcRationalSet);
 
 	bool isIn(const Rational& rcRational) const;
-	int size() const;
-	//bool add(const Rational& rcRational);
+	bool add(const Rational& rcRational);
 
 private:
 	vector<Rational> mcRationals;
