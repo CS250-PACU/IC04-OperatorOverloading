@@ -3,6 +3,7 @@ The solution includes the following projects that build:
 - Rational
 - RationalSet
 - RationalUnitTests
+- RationalSetUnitTests
 
 # Mission
 Your mission is to get complete all of the functions that 
